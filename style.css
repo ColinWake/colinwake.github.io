@@ -3,31 +3,37 @@
 }
 
 .navbar a {
-    padding: 8px;
+    opacity: 0.6;
+    transition: 0.4s;
     color: black;
-    display: inline-block;
-    text-align: center;
-    border: 1px thick solid;
+    display: inline;
+    font-size: 2em;
+    margin-right: 12em;
+    text-align: right;
     margin: auto;
 }
 
 .navbar {
-    font-size: 80;
+    background-image: url("images/osu.jpg");
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    cursor: default;
     background-color: var(--color-primary);
-    text-align: center;
-    border: 2px solid black;
-    border-bottom: none;
+    text-align: right;
+    border-bottom: medium solid black;
 }
 
 .navbar .navbar__active {
+    opacity: 1;
     color: white;
-    background-color: #565264;
-    border: thin solid black !important;
+    background-color: #4F78A1;
+    border-radius: 10px;
 }
 
 .navbar .navbar__active:hover {
-    color: white !important;
-    background-color: #565264 !important;
+    background-color: #4F78A1;
 }
 
 .hidden {
@@ -35,9 +41,11 @@
 }
 
 .navbar a:hover {
+    opacity: 1;
+    border-radius: 10px;
     cursor: default;
     color: white;
-    background-color: #9da2ab;
+    background-color: #8F98A1;
 }
 
 a:link,
@@ -54,20 +62,22 @@ a:active {
     border-right: none;
 }
 
-body,
-html {
-    background-color: #9da2ab;
+body {
+    opacity: 0;
+    transition: opacity 1.5s;
+    background-color: #424B54;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    --color-primary: #2b4162;
+    font-family: 'Lato', sans-serif;
+    --color-primary: #6F88A1;
 }
 
 .tab {
     width: 100%;
     max-width: 1200px;
     /* background-color: purple; */
-    border: medium solid #565264;
+    border: medium solid var(--color-primary);
+    border-bottom: none;
     padding: 2px;
     height: auto;
     top: 50px;
@@ -75,5 +85,5 @@ html {
     margin: auto;
     left: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
 }

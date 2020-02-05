@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <title>Test</title>
 </head>
 
-<body>
+<body onload="document.body.style.opacity = '1'">
 
     <div id="nav-div" class="navbar">
         <a class="navbar__active" href="#" onclick="tab('home', this)">Home</a>
@@ -26,10 +27,6 @@
 
     <div id="about-me" class="tab hidden">
         <div class="image-links">
-            <a target="_blank" href="https://github.com/ColinWake">
-                <img id="github-logo" src="images/github.png" alt="GitHub" height="150" width="300">
-            </a>
-
             <a target="_blank" href="https://www.linkedin.com/in/colinwake/">
                 <img src="images/linkedin.png" alt="LinkedIn" height="150" width="300">
             </a>
@@ -41,7 +38,9 @@
     </div>
 
     <div id="projects" class="tab hidden">
-
+        <a target="_blank" href="https://github.com/ColinWake">
+            <img id="github-logo" src="images/github.png" alt="GitHub" height="150" width="300">
+        </a>
     </div>
 
     <script src="tab.js"></script>
