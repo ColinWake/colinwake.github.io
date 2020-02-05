@@ -1,1 +1,50 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <div id="nav-div" class="navbar">
+        <a class="navbar__active" href="#" onclick="tab('home', this)">Home</a>
+        <a class="navbar__nav" href="#about-me" onclick="tab('about-me', this)">About me</a>
+        <a class="navbar__nav" href="#contact" onclick="tab('contact', this)">Contact Info</a>
+        <a class="navbar__nav" href="#projects" onclick="tab('projects', this)">Projects</a>
+    </div>
+
+    <div class="hidden"></div>
+
+    <div id="home" class="tab">
+        Welcome!
+    </div>
+
+    <div id="about-me" class="tab hidden">
+        <div class="image-links">
+            <a target="_blank" href="https://github.com/ColinWake">
+                <img id="github-logo" src="images/github.png" alt="GitHub" height="150" width="300">
+            </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/colinwake/">
+                <img src="images/linkedin.png" alt="LinkedIn" height="150" width="300">
+            </a>
+        </div>
+    </div>
+
+    <div id="contact" class="tab hidden">
+        Soon
+    </div>
+
+    <div id="projects" class="tab hidden">
+
+    </div>
+
+    <script src="tab.js"></script>
+</body>
+
+</html>
