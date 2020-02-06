@@ -18,6 +18,10 @@
     cursor: default;
 }
 
+.content section {
+    flex: 1 0 auto;
+}
+
 .navbar {
     /* padding-top: 2px;
     padding-bottom: 2px; */
@@ -38,7 +42,7 @@
 
 .navbar .navbar__active:hover {
     /* background-color: #1e1e1e; */
-    color: #3a84b6;
+    color: #0077b5;
     cursor: default;
 }
 
@@ -77,27 +81,28 @@ body {
     /* background-color: white; */
     flex-grow: 1;
     height: calc(100vh - 86.5px);
-    position: static;
+    /* position: static; */
 }
 
-.social-media {
+.social-media footer {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
 }
 
+.social-media #github-logo {
+    filter: invert(1);
+}
+
 .flex .content {
     display: flex;
     color: #0077b5;
-    /* flex-flow: wrap; */
     margin: 50px;
     padding: 10px;
     height: 90vh;
     flex-direction: row;
-    /* border: medium solid black; */
     background-color: #252526;
-    /* border-radius: 10px; */
 }
 
 .flex .social-media img {
@@ -125,6 +130,10 @@ body {
     font-size: 1.75em;
 }
 
+.content #about-me a {
+    color: #00a6ff;
+}
+
 .flex .social-media img:hover {
     opacity: 1;
     transform: scale(1.2) translateY(-6px);
@@ -134,12 +143,13 @@ body {
     display: flex;
     padding: 5px;
     flex-direction: column;
-    align-items: stretch;
 }
 
 .projects img {
     display: flex;
-    max-width: 128px;
+    align-self: flex-start;
+    justify-content: left;
+    max-width: 100%;
     max-height: 128px;
     opacity: 0.6;
     transition: opacity 0.5s;
@@ -149,14 +159,49 @@ body {
     opacity: 1;
 }
 
+#circle-photo {
+    display: flex;
+    align-self: flex-end;
+    max-width: 256px;
+    max-height: 256px;
+}
+
+.content #home p {
+        display: flex;
+        padding: 10px;
+        background-color: #313133;
+        border: thin solid #313133;
+        align-items: center;
+        border-radius: 4px;
+        font-size: 1.75em;
+}
+
+.content #home h2 {
+    font-size: 2em;
+}
+
+.content #home {
+    flex-direction: row;
+}
+
 .projects p {
     display: flex;
     padding: 10px;
     background-color: #313133;
     border: thin solid #313133;
-    float: inline-start;
+    align-items: center;
     border-radius: 4px;
     font-size: 1.75em;
+}
+
+.projects a {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+
+p {
+    cursor: default;
 }
 
 code {
@@ -164,4 +209,6 @@ code {
     color: gray;
     border: thin solid gray;
     border-radius: 4px;
+    padding: 2px;
+    font-size: 1.2em;
 }

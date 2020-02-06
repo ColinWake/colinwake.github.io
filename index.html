@@ -13,11 +13,13 @@
 <body onload="document.body.style.opacity = '1'">
 
 
-    <div id="nav-div" class="navbar">
-        <a class="navbar__active" href="#" onclick="tab('home', this)">Home</a>
-        <a class="navbar__nav" href="#" onclick="tab('about-me', this)">About me</a>
-        <a class="navbar__nav" href="#" onclick="tab('projects', this)">Projects</a>
-    </div>
+    <header id="nav-header">
+        <div id="nav-div" class="navbar">
+            <a class="navbar__active" href="#" onclick="tab('home', this)">Home</a>
+            <a class="navbar__nav" href="#" onclick="tab('about-me', this)">About me</a>
+            <a class="navbar__nav" href="#" onclick="tab('projects', this)">Projects</a>
+        </div>
+    </header>
 
     <div class="flex">
 
@@ -27,36 +29,15 @@
 
             <div id="home" class="tab">
                 <div id="home__info">
-                    <h2>
-                        Bacon ipsum dolor amet pork chop turkey picanha tail tenderloin prosciutto alcatra. Tri-tip
-                        capicola corned beef shank
-                        sirloin. Filet mignon bresaola turducken cupim. Pork loin kevin leberkas short loin. Pig t-bone
-                        biltong jowl strip steak
-                        tri-tip tail kevin cow.
-                        <br>
-                        <br>
-                        Ribeye shank swine frankfurter pastrami capicola meatball chislic tenderloin corned beef.
-                        Sausage doner picanha short
-                        ribs pork chop shoulder tail corned beef, prosciutto venison cow. Biltong burgdoggen picanha
-                        ground round jerky fatback
-                        sirloin short ribs tenderloin venison. Spare ribs tri-tip buffalo hamburger fatback prosciutto
-                        shankle landjaeger
-                        picanha sirloin pork chop chicken chislic swine ribeye. Andouille bresaola corned beef brisket
-                        rump cow shoulder
-                        frankfurter capicola meatball buffalo pork chop shankle t-bone meatloaf. Pancetta boudin picanha
-                        pork loin, buffalo
-                        bresaola pig chislic pork chop filet mignon kevin.
-                        <br>
-                        <br>
-                        Ham hock bresaola pancetta, shank hamburger bacon buffalo chicken pig chislic pastrami.
-                        Frankfurter pork chop tongue
-                        pancetta burgdoggen ribeye, salami picanha boudin beef pig biltong. Chuck tongue sirloin shankle
-                        flank filet mignon
-                        sausage, biltong capicola ball tip. Brisket meatloaf beef, ground round landjaeger bresaola
-                        flank chislic pig pork
-                        turkey. Tail cupim tenderloin, chicken doner jerky flank jowl.
-                    </h2>
+                    <img id="circle-photo" src="images/me.png" alt="Me!">
+                    <h2>Welcome!</h2>
+                    <p>
+                        I'm a software developer based in Columbus, Ohio, with experience in multiple languages and
+                        frameworks. Thanks for having a look at my portfolio, please browse through my story and different projects I've created with the navigation menu above!
+                    </p>
+
                 </div>
+
             </div>
 
             <div id="about-me" class="tab hidden">
@@ -81,46 +62,50 @@
                     I began learning Java at the ripe young age of 15, throwing myself into the deep end with no idea
                     what I was doing. It was a long journey filled with hours of browsing StackOverflow and attempting
                     to figure out why I had a <code>NullPointerException</code>, but everything was worth it in the end.
-                    <br><br>Along with Java, I've worked with <a href="https://golang.org">Go</a>, C#, Python, C/C++,
+                    <br><br>Along with Java, I've worked with <a target="_blank" href="https://golang.org">Go</a>, C#,
+                    <a target="_blank" href="https://www.rust-lang.org/">Rust</a>, Python, C/C++,
                     JavaScript
-                    and <a href="https://www.typescriptlang.org/">TypeScript</a> using Node.js, and HTML5 with CSS3.
+                    and <a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a> using Node.js, and
+                    HTML5 with CSS3 (Flexbox, Grid).
                 </p>
             </div>
 
             <div id="projects" class="tab hidden">
                 <section class="projects">
-                <section id="steam-check">
-                    <h2>Steam Check</h2>
-                    <a href="https://github.com/ColinWake/SteamCheck" target="_blank">
-                        <img src="images/steam.png" alt="Steam Logo">
-                    </a>
-                    <p>
-                        A console application to check usernames againt the Steam API to see if it's available to be
-                        claimed as a custom URL
-                        (specific link unique to one user)
-                    </p>
-                </section>
+                    <section id="steam-check">
+                        <h2>Steam Check <code>Go</code></h2>
+                        <a href="https://github.com/ColinWake/SteamCheck" target="_blank">
+                            <img src="images/steam.png" alt="Steam Logo">
+                        </a>
+                        <p>
+                            A console application to check usernames againt the Steam API to see if it's available to be
+                            claimed as a custom URL
+                            (specific link unique to one user)
+                        </p>
+                    </section>
 
-                <section id="binary-to-decimal">
-                    <h2>Binary To Decimal</h2>
-                    <a href="https://github.com/ColinWake/BinaryToDecimal">
-                        <img src="images/binary.png" alt="Binary">
-                    </a>
-                    <p>
-                        A small Swing application to live-translate binary input to its decimal equivalent.
-                    </p>
-                </section>
+                    <section id="binary-to-decimal">
+                        <h2>Binary To Decimal <code>Java, Swing</code></h2>
+                        <a href="https://github.com/ColinWake/BinaryToDecimal" target="_blank">
+                            <img src="images/binary.png" alt="Binary">
+                        </a>
+                        <p>
+                            A small Swing application to live-translate binary input to its decimal equivalent.
+                        </p>
+                    </section>
                 </section>
             </div>
         </section>
 
         <div class="social-media">
-            <a href="https://linkedin.com/in/colinwake" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn" height="50" width="100">
-            </a>
-            <a target="_blank" href="https://github.com/ColinWake">
-                <img id="github-logo" src="images/github.png" alt="GitHub" height="55" width="90">
-            </a>
+            <footer id="icons" class="social-media">
+                <a href="https://linkedin.com/in/colinwake" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" height="50" width="100">
+                </a>
+                <a href="https://github.com/ColinWake" target="_blank">
+                    <img id="github-logo" src="images/github.png" alt="GitHub" height="55" width="90">
+                </a>
+            </footer>
         </div>
     </div>
 
