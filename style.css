@@ -130,23 +130,31 @@ body {
     transform: scale(1.2) translateY(-6px);
 }
 
-#steam-check {
+.projects {
     display: flex;
-    flex-direction: column;
     padding: 5px;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-#steam-check img {
+.projects img {
+    display: flex;
     max-width: 128px;
     max-height: 128px;
-
+    opacity: 0.6;
+    transition: opacity 0.5s;
 }
 
-#steam-check p {
+.projects img:hover {
+    opacity: 1;
+}
+
+.projects p {
+    display: flex;
     padding: 10px;
     background-color: #313133;
     border: thin solid #313133;
+    float: inline-start;
     border-radius: 4px;
     font-size: 1.75em;
 }
