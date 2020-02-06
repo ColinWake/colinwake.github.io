@@ -1,12 +1,13 @@
 #nav-div {
     overflow: hidden;
     justify-content: space-evenly;
+    padding: 3px;
 }
 
 .navbar a {
     opacity: 0.6;
     transition: 0.5s;
-    color: black;
+    color: white;
     display: flex;
     font-size: 4em;
     text-align: right;
@@ -14,24 +15,26 @@
 }
 
 .navbar {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
     display: flex;
     flex-direction: row;
     cursor: default;
-    background-color: #6F88A1;
+    background-color: #252526;
     border-bottom: medium solid black;
 }
 
 .navbar .navbar__active {
     opacity: 1;
-    color: white;
-    background-color: #4F78A1;
-    border-radius: 10px;
+    color: #0077b5;
+    /* box-shadow: 2px 2px black; */
+    background-color: #1e1e1e;
+    /* border-radius: 10px; */
 }
 
 .navbar .navbar__active:hover {
-    background-color: #4F78A1;
+    background-color: #1e1e1e;
+    color: #3a84b6;
     cursor: default;
 }
 
@@ -41,10 +44,11 @@
 
 .navbar a:hover {
     opacity: 1;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
+    /* box-shadow: 2px 2px black; */
     color: white;
-    background-color: #8F98A1;
+    background-color: #2d2d30;
 }
 
 a:link,
@@ -57,7 +61,7 @@ a:active {
 body {
     opacity: 0;
     transition: opacity ease-in 1s;
-    background-color: #424B54;
+    background-color: #212124;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
@@ -68,7 +72,7 @@ body {
     flex-direction: column;
     /* background-color: white; */
     flex-grow: 1;
-    height: calc(100vh - 84.5px);
+    height: calc(100vh - 86.5px);
     position: static;
 }
 
@@ -81,29 +85,31 @@ body {
 
 .flex .content {
     display: flex;
-    flex-flow: wrap;
+    color: #0077b5;
+    /* flex-flow: wrap; */
     margin: 50px;
     padding: 10px;
     height: 90vh;
     flex-direction: row;
-    border: medium solid black;
-    background-color: #8F98A1;
-    border-radius: 10px;
+    /* border: medium solid black; */
+    background-color: #252526;
+    /* border-radius: 10px; */
 }
 
 .flex img {
     display: flex;
     max-width: 128px;
     max-height: 128px;
-    height: auto;
-    width: auto;
-    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+    justify-content: space-evenly;
     opacity: 0.4;
-    transition: 0.5s;
+    transition: opacity 0.5s, transform 0.3s;
     color: white;
-    /* filter: brightness(10000); */
+
 }
 
 .flex img:hover {
     opacity: 1;
+    transform: scale(1.2) translateY(-6px);
 }
