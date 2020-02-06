@@ -1,27 +1,25 @@
 #nav-div {
     overflow: hidden;
+    justify-content: space-evenly;
 }
 
 .navbar a {
     opacity: 0.6;
-    transition: 0.4s;
+    transition: 0.5s;
     color: black;
-    display: inline;
-    font-size: 2em;
-    margin-right: 12em;
+    display: flex;
+    font-size: 4em;
     text-align: right;
     margin: auto;
 }
 
 .navbar {
-    background-image: url("images/osu.jpg");
     padding-top: 2px;
     padding-bottom: 2px;
     display: flex;
     flex-direction: row;
     cursor: default;
-    background-color: var(--color-primary);
-    text-align: right;
+    background-color: #6F88A1;
     border-bottom: medium solid black;
 }
 
@@ -34,6 +32,7 @@
 
 .navbar .navbar__active:hover {
     background-color: #4F78A1;
+    cursor: default;
 }
 
 .hidden {
@@ -43,7 +42,7 @@
 .navbar a:hover {
     opacity: 1;
     border-radius: 10px;
-    cursor: default;
+    cursor: pointer;
     color: white;
     background-color: #8F98A1;
 }
@@ -55,35 +54,56 @@ a:active {
     text-decoration: none;
 }
 
-.image-links {
-    text-align: center;
-    margin-top: 20px;
-    border-left: none;
-    border-right: none;
-}
-
 body {
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity ease-in 1s;
     background-color: #424B54;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    --color-primary: #6F88A1;
 }
 
-.tab {
-    width: 100%;
-    max-width: 1200px;
-    /* background-color: purple; */
-    border: medium solid var(--color-primary);
-    border-bottom: none;
-    padding: 2px;
+.flex {
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    flex-grow: 1;
+    height: calc(100vh - 84.5px);
+    position: static;
+}
+
+.social-media {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex .content {
+    display: flex;
+    flex-flow: wrap;
+    margin: 50px;
+    padding: 10px;
+    height: 90vh;
+    flex-direction: row;
+    border: medium solid black;
+    background-color: #8F98A1;
+    border-radius: 10px;
+}
+
+.flex img {
+    display: flex;
+    max-width: 128px;
+    max-height: 128px;
     height: auto;
-    top: 50px;
-    bottom: 0px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: fixed;
+    width: auto;
+    justify-content: space-between;
+    opacity: 0.4;
+    transition: 0.5s;
+    color: white;
+    /* filter: brightness(10000); */
+}
+
+.flex img:hover {
+    opacity: 1;
 }
