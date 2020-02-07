@@ -44,6 +44,22 @@
     display: none;
 }
 
+h1 code {
+    font-size: 3em;
+}
+
+#photo-and-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#name-markdown {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .navbar a:hover {
     opacity: 1;
     cursor: pointer;
