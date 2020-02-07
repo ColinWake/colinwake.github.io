@@ -33,13 +33,9 @@
 .navbar .navbar__active {
     opacity: 1;
     color: #0077b5;
-    /* box-shadow: 2px 2px black; */
-    /* background-color: #1e1e1e; */
-    /* border-radius: 10px; */
 }
 
 .navbar .navbar__active:hover {
-    /* background-color: #1e1e1e; */
     color: #0077b5;
     cursor: default;
 }
@@ -50,11 +46,8 @@
 
 .navbar a:hover {
     opacity: 1;
-    /* border-radius: 10px; */
     cursor: pointer;
-    /* box-shadow: 2px 2px black; */
     color: white;
-    /* background-color: #2d2d30; */
 }
 
 a:link,
@@ -66,21 +59,18 @@ a:active {
 
 body {
     opacity: 0;
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1.2s;
     background-color: #212124;
     margin: 0;
     padding: 0;
-    /* font-family: 'Lato', sans-serif; */
     font-family: 'Ubuntu', sans-serif;
 }
 
 .flex {
     display: flex;
     flex-direction: column;
-    /* background-color: white; */
     flex-grow: 1;
     height: calc(100vh - 86.5px);
-    /* position: static; */
 }
 
 .social-media footer {
