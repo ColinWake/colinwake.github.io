@@ -1,5 +1,4 @@
 #nav-div {
-    overflow: hidden;
     justify-content: space-evenly;
     padding: 3px;
 }
@@ -12,6 +11,10 @@
     font-size: 4em;
     text-align: right;
     margin: auto;
+}
+
+.content {
+    overflow-y: auto;
 }
 
 .content h2 {
