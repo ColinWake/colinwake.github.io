@@ -36,6 +36,7 @@
 .navbar .navbar__active {
     opacity: 1;
     color: #0077b5;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
 
 .navbar .navbar__active:hover {
