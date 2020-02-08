@@ -94,9 +94,11 @@ body {
 
 .social-media footer {
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
+    border-top: medium solid black;
+    background-color: #252526;
+    padding-top: 20px;
 }
 
 .flex .content {
@@ -137,7 +139,7 @@ body {
     color: #00a6ff;
 }
 
-.flex .social-media img:hover {
+.social-media img:hover {
     opacity: 1;
     transform: scale(1.2) translateY(-6px);
     filter: drop-shadow(0 0 0.5rem rgb(153, 153, 153));
