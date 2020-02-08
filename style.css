@@ -67,6 +67,7 @@ h1 code {
 .navbar a:hover {
     opacity: 1;
     cursor: pointer;
+    filter: drop-shadow(0.35rem 0.35rem 0.1rem black);
     color: white;
 }
 
