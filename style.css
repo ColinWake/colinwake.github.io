@@ -8,7 +8,7 @@
     transition: 0.5s;
     color: white;
     display: flex;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: right;
     margin: auto;
 }
@@ -28,7 +28,6 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    cursor: default;
     background-color: #252526;
     border-bottom: medium solid black;
 }
@@ -66,7 +65,6 @@ h1 code {
 
 .navbar a:hover {
     opacity: 1;
-    cursor: pointer;
     filter: drop-shadow(0.35rem 0.35rem 0.1rem black);
     color: white;
 }
