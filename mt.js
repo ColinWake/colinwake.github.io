@@ -3,7 +3,7 @@
  * Simplified by Colin Wakefield
  */
 ((separator, timeout) => {
-    var title = (document.title) + " " + (separator || "-") + " ";
+    let title = (document.title) + " " + (separator || "-") + " ";
     setInterval(() => {
         title = title.substring(1) + title.charAt(0);
         document.title = title;
