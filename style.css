@@ -129,8 +129,8 @@ body {
 
 .content #about-me p {
     padding: 10px;
-    background-color: #313133;
-    border: thin solid #313133;
+    /*background-color: #313133;*/
+    /*border: thin solid #313133;*/
     border-radius: 4px;
     font-size: 1.55em;
 }
@@ -179,8 +179,8 @@ body {
 .content #home p {
     display: flex;
     padding: 10px;
-    background-color: #313133;
-    border: thin solid #313133;
+    /*background-color: #313133;*/
+    /*border: thin solid #313133;*/
     align-items: center;
     border-radius: 4px;
     font-size: 2em;
@@ -197,8 +197,8 @@ body {
 .projects p {
     display: flex;
     padding: 10px;
-    background-color: #313133;
-    border: thin solid #313133;
+    /*background-color: #313133;*/
+    /*border: thin solid #313133;*/
     align-items: center;
     border-radius: 4px;
     font-size: 1.75em;
